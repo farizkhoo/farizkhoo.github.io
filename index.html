@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tic Tac Toe</title>
+
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+	<h1>Tic Tac Toe</h1>
+
+	<h2>Instructions</h2>
+
+	<p>Select computer difficulty or two-player mode.</p>
+
+	<button onclick="setComputerEasy()">Computer : Easy</button>
+
+	<button onclick="setComputerHard()">Computer : Hard</button>
+
+	<button onclick="setTwoPlayer()">2-Player</button>
+
+	<p>Click this button to reset the game.</p>
+
+	<button onclick="clearBoardArea()">Reset</button>
+
+
+	<div id="container">
+		<div id="board-area">
+			<!-- location a1 -->
+			<div class="input-area top-left"><p class="board-text"></p></div>
+			<!-- location a2 -->
+			<div class="input-area top"><p class="board-text"></p></div>
+			<!-- location a3 -->
+			<div class="input-area top-right"><p class="board-text"></p></div>
+			<!-- location b1 -->
+			<div class="input-area left"><p class="board-text"></p></div>
+			<!-- location b2 -->
+			<div class="input-area middle"><p class="board-text"></p></div>
+			<!-- location b3 -->
+			<div class="input-area right"><p class="board-text"></p></div>
+			<!-- location c1 -->
+			<div class="input-area bottom-left"><p class="board-text"></p></div>
+			<!-- location c2 -->
+			<div class="input-area bottom"><p class="board-text"></p></div>
+			<!-- location c3 -->
+			<div class="input-area bottom-right"><p class="board-text"></p></div>
+		</div>
+
+		<div id="win-message" class="hidden">
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
