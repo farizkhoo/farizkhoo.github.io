@@ -1,0 +1,51 @@
+body {
+  background-color: white;
+  color: black;
+  font-family:Arial,sans-serif;
+}
+
+table{
+  border: 2px solid red;
+  cursor: pointer;
+  text-align: center;
+  background-color:; black;
+  table-layout: 
+
+
+}
+
+.days, .calendar-day {
+  height: 20px;
+  width: 80px;
+  border: 1px solid blue;
+  cursor: pointer;
+  text-align: center;
+  color: white;
+  background-color: black;
+
+}
+
+.calendar-day0{
+  height: 20px;
+  width: 80px;
+  cursor: pointer;
+  text-align: center;
+  color: grey;
+  background-color: black;
+}
+
+.controls {
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+}
+
+#returnButton{
+  border: 2px solid grey;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  text-align: left;
+  display: block;
+  float: left;
+}
