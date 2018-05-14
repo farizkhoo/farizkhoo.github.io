@@ -1,54 +1,92 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Tic Tac Toe</title>
-
-	<link rel="stylesheet" href="style.css" />
+	<title>FJWHY Tours</title>
+	<link rel="stylesheet" href="style.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Righteous|Titillium+Web" rel="stylesheet">
 </head>
 <body>
-	<h1>Tic Tac Toe</h1>
+	<header class="fixed">
+		<div class="container">
+			<div id="logo">
+				<img src = "images/logo.png">
+			</div>
 
-	<h2>Instructions</h2>
+			<nav>
+				<ul>
+					<li class="nav-buttons"><a href ="http://www.example.com/">About Us</a></li> 
+					<li class="nav-buttons"><a href ="http://www.example.com/">Blog</a></li>
+					<li class="nav-buttons"><a href ="http://www.example.com/">Testimonials</a></li>
+				</ul>
+			</nav>
 
-	<p>Select computer difficulty or two-player mode.</p>
-
-	<button onclick="setComputerEasy()">Computer : Easy</button>
-
-	<button onclick="setComputerHard()">Computer : Hard</button>
-
-	<button onclick="setTwoPlayer()">2-Player</button>
-
-	<p>Click this button to reset the game.</p>
-
-	<button onclick="clearBoardArea()">Reset</button>
-
-
-	<div id="container">
-		<div id="board-area">
-			<!-- location a1 -->
-			<div class="input-area top-left"><p class="board-text"></p></div>
-			<!-- location a2 -->
-			<div class="input-area top"><p class="board-text"></p></div>
-			<!-- location a3 -->
-			<div class="input-area top-right"><p class="board-text"></p></div>
-			<!-- location b1 -->
-			<div class="input-area left"><p class="board-text"></p></div>
-			<!-- location b2 -->
-			<div class="input-area middle"><p class="board-text"></p></div>
-			<!-- location b3 -->
-			<div class="input-area right"><p class="board-text"></p></div>
-			<!-- location c1 -->
-			<div class="input-area bottom-left"><p class="board-text"></p></div>
-			<!-- location c2 -->
-			<div class="input-area bottom"><p class="board-text"></p></div>
-			<!-- location c3 -->
-			<div class="input-area bottom-right"><p class="board-text"></p></div>
+			<div id="social-media">
+				<ul>
+					<li><img src="images/facebook.png"></li>
+					<li><img src="images/instagram.png"></li>
+					<li><img src="images/twitter.png"></li>
+				</ul>
+			</div>
 		</div>
 
-		<div id="win-message" class="hidden">
+		<div id="welcome-message">
+			<p class = "Tagline"> "We aspire to change the way you experience life here.
+			</br> Experience Malaysia like never before through our tailor made tours." </p>
 		</div>
+
+		<div id="qualities">
+		</div>
+	</header>
+	
+	<div id="spotlight" class="container">
+		<div class="categories"><img src="images/Beach.jpg"> <p class = "spotlight-text"> Discover Beaches</p></div>
+		<div class="categories"><img src="images/KL City.jpg"><p class = "spotlight-text"> KL City </br>Vibes </p></div>
+		<div class="categories"><img src="images/Nasi Lemak.jpg"><p class = "spotlight-text"> Food</br>Trails </p></div>
+		<div class="categories"><img src="images/Jungle.jpg"><p class = "spotlight-text">Jungle 
+		</br>Paths</p></div>
 	</div>
 
-	<script src="script.js"></script>
+	<div id="steps">
+		<h2 class = "steps-header">How to create a trip with us?</h2>
+		<ul id = "steps-container">
+				<li class = "steps-list"><div class = "step-number">1</div> Browse available tours</li>
+				<li class = "steps-list"><div class = "step-number">2</div> Choose your tour guide</li>
+				<li class = "steps-list"><div class = "step-number">3</div> Book with us</li>
+				<li id = "trip-button" class = "steps-list"> <a href ="./Calendar/May2018.html">Create trip</a></li>
+		</ul>
+	</div>
+
+	<div class = "about-us">
+		<h2 class = "about-us">Not your average tour guides</h2>
+		<p class ="about-us"> We started our tour goup in 2016 curating tours for our friends who were visiting from around the world. Since then, we have expanded our tours into a full fledged business. </br> We avoid tourist traps in favor of sights that you really want to see - a motorcycle ride around "kampongs", a visit to a serene beach in the East Coast and the list goes on. Pretty much anything that offers you a glimpse of what it would be like to experience live in this country with a local friend by your side. Our tour guides not only have street cred, but most of all they are excited to show you Malaysia like never before.			
+		</p>
+	</div>
+
+
+	<footer>
+		<div class = "footer-item">
+			<ul> <h2> <strong> Got Questions? </strong></h2>
+				<li>Contact Us</li>
+				<li>Drop us your questions</li>
+			</ul>
+		</div>
+
+		<div class = "footer-item">
+			<ul> <h2> <strong> Policies </strong></h2>
+				<li>Payment</li>
+				<li>Cancellation and Refunds</li>
+				<li>Privacy</li>
+			</ul>
+		</div>
+
+		<div class = "footer-item" >
+			<ul> <h2> <strong> Join Us </strong></h2>
+				<li>Become a Tour Guide</li>
+			</ul>
+		</div>
+		
+	</footer>
+	
+	<script src="script.js"/>
 </body>
 </html>

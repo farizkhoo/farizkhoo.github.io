@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+	
+<head>
+	
+<link rel="stylesheet" href="calender.css"/>	
+
+</head>
+
+</body>
+
+<h1>Pick your tour!</h1>
+
+<div id="tours">
+  <div class="tourtitle">
+    <img class="pic" src ="images/beach.jpg"/>
+      <button class= "button1">Book Beach</button>
+    <span id="beachdescription">Beachtour</span>	
+  </div>
+
+  <div class="tourtitle">
+    <img class="pic" src ="images/Jungle.jpg"/>
+      <button class= "button1">Book Jungle</button>
+    <span id="jungledescription">Jungle tour</span>	
+  </div>
+
+  <div class="tourtitle">
+    <img class="pic" src ="images/Nasi lemak.jpg"/>
+      <button class= "button1">Book Food</button>
+    <span id="Fooddescription">Food tour</span>	
+  </div>
+
+  <div class="tourtitle">
+    <img class="pic" src ="images/KL City 2.jpg"/>
+      <button class= "button1">Book City</button>
+    <span id="citydescription">City tour</span>	
+  </div>
+
+</div>
+
+<div id="shopping-cart">
+  <!-- Title -->
+  <div class="title">
+    Shopping Bag
+  </div>
+ 
+  <!-- Product #1 -->
+  <div id="product1" class="item">
+    <!-- <div class="buttons">
+     <button class="delete-btn" style="background-image: url('https://png.icons8.com/metro/1600/trash.png'); background-size:  contain;"></button>
+      <span class="like-btn"></span>
+    </div> -->
+ 
+    <div class="image">
+      <img class="pic2" src="images/beach.jpg" alt="" />
+    </div>
+ 
+    <div class="description">
+      <span>Beach tour</span>   
+
+    </div>
+
+    <div class="total-price">$549</div>
+  </div>
+ 
+  <!-- Product #2 -->
+  <div id="product2" class="item">
+    <!-- <div class="buttons">
+      <button class="delete-btn" style="background-image: url('https://png.icons8.com/metro/1600/trash.png'); background-size:  contain;"></button>
+      <span class="like-btn"></span>
+    </div> -->
+ 
+    <div class="image">
+      <img class="pic2" src="images/Jungle.jpg" alt=""/>
+    </div>
+ 
+    <div class="description">
+      <span>Jungle tour</span>
+
+    </div>
+ 
+ 
+    <div class="total-price">$870</div>
+  </div>
+ 
+  <!-- Product #3 -->
+  <div id="product3" class="item">
+    <!-- <div class="buttons">
+     <button class="delete-btn" style="background-image: url('https://png.icons8.com/metro/1600/trash.png'); background-size:  contain;"></button>
+      <span class="like-btn"></span>
+    </div> -->
+ 
+    <div class="image">
+      <img class="pic2" src="images/KL City 2.jpg" alt="" />
+    </div>
+ 
+    <div class="description">
+      <span>Food tour</span>
+    </div>
+ 
+    <div class="total-price">$249</div>
+  </div>
+
+  
+
+<!-- Product #4 -->
+  <div id="product4" class="item">
+    <!-- <div class="buttons">
+      <button class="delete-btn" style="background-image: url('https://png.icons8.com/metro/1600/trash.png'); background-size:  contain;"></button>
+      <span class="like-btn"></span>
+    </div> -->
+ 
+    <div class="image">
+      <img class="pic2" src="images/Jungle.jpg" alt="" />
+    </div>
+ 
+    <div class="description">
+      <span>City tour</span>
+    </div>
+
+ 
+    <div class="total-price">$349</div>
+  </div>
+
+
+
+  
+
+<script>
+
+let tour_list = [];
+let product_list = [];
+buttons = document.getElementsByClassName("button1");
+console.log(buttons);
+
+for(i=0; i<buttons.length; i++){
+  clicked = buttons[i]
+  clicked.onclick = function(event){
+    let tour = this.innerHTML
+    if (tour == "Book Beach"){
+      tour = "product1"
+    }
+
+    else if( tour== "Book Jungle"){
+      tour = "product2"
+    }
+    else if(tour =="Book Food"){
+      tour = "product3"
+    }
+    else {
+      tour = "product4"
+    }
+
+console.log(tour_list)
+console.log(tour)
+   if (tour_list.indexOf(tour)>0){
+  }
+
+  else {
+    tour_list.push(tour)
+  }
+  
+
+  console.log(tour_list)
+   for (i=0;i<tour_list.length;i++){
+  console.log(tour_list[i])
+  document.getElementById(tour_list[i]).style.display = "flex"
+  }
+ }   
+}
+
+
+
+</script>
+
+<body>
+
+
+</html>
